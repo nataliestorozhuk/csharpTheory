@@ -6,12 +6,15 @@ namespace CsharpTheory
     {
         static void Main(string[] args)
         {
-            int month = 2;
-            int year = 1958;
+            #region MonthDays
+            //int month = 2;
+            //int year = 1958;
+            //MonthDays mD = new MonthDays(month, year);
+            //mD.GetNumberOfDays(); 
+            #endregion
 
-            MonthDays mD = new MonthDays(month, year);
 
-            mD.GetNumberOfDays();
+
 
         }
     }
