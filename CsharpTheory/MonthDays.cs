@@ -8,6 +8,13 @@ namespace CsharpTheory
 {
    public class MonthDays
     {
+        public static void run()
+        {
+            int month = 2;
+            int year = 1958;
+            MonthDays mD = new MonthDays(month, year);
+            mD.GetNumberOfDays();
+        }
 
         private int month;
         private int year;
