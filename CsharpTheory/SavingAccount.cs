@@ -12,9 +12,10 @@ namespace CsharpTheory
         private double annualInterestRate;
         private double balance;
 
-        public SavingAccount(double balance)
+        public SavingAccount(double balance, double annualInterestRate)
         {
             this.balance = balance;
+            this.annualInterestRate = annualInterestRate;
 
         }
 
@@ -33,8 +34,18 @@ namespace CsharpTheory
         public double GetBalanceWithInterestRate()
         {
 
-            double x = annualInterestRate / 12;
-            return balance * x;
+            double monthlyInterest = annualInterestRate / 12;
+            return (balance * monthlyInterest) + balance;
+        }
+
+        public double GetAccountBalance()
+        {
+            return balance;
+        }
+
+        public double GetAnnualInterestRate()
+        {
+            return annualInterestRate;
         }
     }
 }
