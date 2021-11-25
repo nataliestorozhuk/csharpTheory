@@ -14,7 +14,9 @@ namespace CsharpTheory
 
             //MonthDays.Run();
 
-            DepositAndWithdrawalFiles.Run();
+            //DepositAndWithdrawalFiles.Run();
+
+            Patient.Run();
                     
 
             
