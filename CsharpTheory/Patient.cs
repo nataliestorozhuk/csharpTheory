@@ -10,8 +10,7 @@ namespace CsharpTheory
     {
         public static void Run()
         {
-            double totalCharges;
-
+            
             Patient patient = new Patient("Nata", "no middle name", "Stor", "12 Beyer ave.", "Phila", "PA", "19116", "Nick", "609-849-1648");
             Procedure procedure1 = new Procedure("Exam", "November 25th 2021", "Dr. Irvine", 250.00);
             Procedure procedure2 = new Procedure("X-ray", "November 25th 2021", "Dr. Jamison", 500.00);
@@ -28,7 +27,7 @@ namespace CsharpTheory
             Console.WriteLine("Date:" + procedure1.ProcedureDate + "\t\t" + "Date:" + procedure2.ProcedureDate +
                "\t\t" + "Date:" + procedure3.ProcedureDate);
             Console.WriteLine("Practitioner:" + procedure1.PractitionerName + "\t\t" + "Practitioner:" + procedure2.PractitionerName +
-               "\t\t" + "Practitioner:" + procedure3.PractitionerName);
+               "\t" + "Practitioner:" + procedure3.PractitionerName);
             Console.WriteLine("Charge:" + procedure1.ProcedureCharges + "\t\t\t" + "Charge:" + procedure2.ProcedureCharges +
                "\t\t\t" + "Charge:" + procedure3.ProcedureCharges);
             Console.WriteLine("");
