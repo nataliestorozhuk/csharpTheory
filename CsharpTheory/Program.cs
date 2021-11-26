@@ -16,7 +16,9 @@ namespace CsharpTheory
 
             //DepositAndWithdrawalFiles.Run();
 
-            Patient.Run();
+            //Patient.Run();
+
+            RoulettePocket.Run();
                     
 
             
