@@ -18,7 +18,9 @@ namespace CsharpTheory
 
             //Patient.Run();
 
-            RoulettePocket.Run();
+            //RoulettePocket.Run();
+
+            Coin.Run();
                     
 
             
