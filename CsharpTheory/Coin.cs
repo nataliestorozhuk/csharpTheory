@@ -14,5 +14,28 @@ namespace CsharpTheory
         }
 
         public string SideUp { get; set; }
-    }
+
+        public Coin()
+        {
+
+            Toss();
+            
+        }
+
+        private void Toss()
+        {
+            Random random = new Random();
+            int number = random.Next(2-1);
+
+            if (number == 0)
+            {
+                SideUp = "heads";
+            }
+
+            if (number == 1)
+            {
+                SideUp = "tails";
+            }
+        }
+            }
 }
