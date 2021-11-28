@@ -20,7 +20,9 @@ namespace CsharpTheory
 
             //RoulettePocket.Run();
 
-            Coin.Run();
+            //Coin.Run();
+
+            TossingCoinsForAdollar.Run();
                     
 
             
