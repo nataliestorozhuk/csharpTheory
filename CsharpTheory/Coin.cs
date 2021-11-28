@@ -15,10 +15,10 @@ namespace CsharpTheory
 
             for (int i = 0; i < 20; i++)
             {
-                Coin coins = new Coin();
-                Console.WriteLine("The side is: " + coins.GetSideUp());
+                //Coin coins = new Coin();
+                Console.WriteLine("The side is: " + coin.Toss());
 
-                if (coins.GetSideUp() == "heads")
+                if (coin.Toss() == "heads")
                 {
                     headsCounter++;
 
@@ -35,12 +35,12 @@ namespace CsharpTheory
 
         private string SideUp { get; set; }
 
-        public Coin()
-        {
-            Toss();
-        }
+        //public Coin()
+        //{
+        //    Toss();
+        //}
 
-        private void Toss()
+        public string Toss()
         {
             Random random = new Random();
             int number = random.Next(0, 2);
@@ -55,6 +55,7 @@ namespace CsharpTheory
             {
                 SideUp = "tails";
             }
+            return SideUp;
         }
 
         public string GetSideUp()
