@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CsharpTheory
 {
@@ -15,13 +11,14 @@ namespace CsharpTheory
 
             Coin coin = new Coin();
 
-            Console.WriteLine("Initial side up is: " + coin.SideUp);
+            Console.WriteLine("Initial side up is: " + coin.GetSideUp());
 
             for (int i = 0; i < 20; i++)
             {
                 Coin coins = new Coin();
-               
-                if(coin.SideUp == "heads")
+                Console.WriteLine("The side is: " + coins.GetSideUp());
+
+                if (coins.GetSideUp() == "heads")
                 {
                     headsCounter++;
 
@@ -31,32 +28,39 @@ namespace CsharpTheory
                     tailsCounter++;
                 }
 
-                Console.WriteLine("Heads: " + headsCounter);
-                Console.WriteLine("Tails: " + tailsCounter);
             }
+            Console.WriteLine("Heads: " + headsCounter);
+            Console.WriteLine("Tails: " + tailsCounter);
         }
-        
-        public string SideUp { get; set; }
+
+        private string SideUp { get; set; }
 
         public Coin()
-    {
-            Toss();            
+        {
+            Toss();
         }
 
         private void Toss()
         {
             Random random = new Random();
-            int number = random.Next(2-0);
+            int number = random.Next(0, 2);
+
 
             if (number == 0)
             {
                 SideUp = "heads";
             }
 
-            if (number == 1)
+            else
             {
                 SideUp = "tails";
             }
         }
-            }
+
+        public string GetSideUp()
+        {
+            return SideUp;
+        }
+
+    }
 }
