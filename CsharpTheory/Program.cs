@@ -6,23 +6,23 @@ namespace CsharpTheory
     {
         static void Main(string[] args)
         {
-
-
+            Die.Run();
+            //TossingCoinsForAdollar.Run();
+            //Coin.Run();
+            //RoulettePocket.Run();
+            //Patient.Run();
+            //DepositAndWithdrawalFiles.Run();
+            //MonthDays.Run();
+            //FreezingAndBoilingPoints.Run();
             // SavingAccount.Run();
 
-            //FreezingAndBoilingPoints.Run();
 
-            //MonthDays.Run();
 
-            //DepositAndWithdrawalFiles.Run();
 
-            //Patient.Run();
 
-            //RoulettePocket.Run();
 
-            //Coin.Run();
 
-            TossingCoinsForAdollar.Run();
+
                     
 
             
