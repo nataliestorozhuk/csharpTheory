@@ -7,7 +7,7 @@ namespace CsharpTheory
         public static void Run()
         {
             const int DIE1_SIDES = 6;
-            const int DIE2_SIDES = 12;
+        
             const int MAX_ROLLS = 5;
 
             Die die1 = new Die(DIE1_SIDES);
