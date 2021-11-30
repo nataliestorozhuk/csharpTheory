@@ -11,20 +11,20 @@ namespace CsharpTheory
         //private int sides;
         //private int value;
 
-        public int sides { get; set; }
-        public int value { get; set; }
+        public int Sides { get; set; }
+        public int Value { get; set; }
 
         public Cube(int numSides)
         {
-            sides = numSides;
-            roll();
+            Sides = numSides;
+            Roll();
         }
 
-        private void roll()
+        private void Roll()
         {
             Random rand = new Random();
 
-            value = rand.Next(sides) + 1;
+            Value = rand.Next(Sides) + 1;
         }
        
     }
