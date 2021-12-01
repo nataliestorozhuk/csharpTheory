@@ -6,7 +6,7 @@ namespace CsharpTheory
     {
         static void Main(string[] args)
         {
-            Die.Run();
+            FishingGameSimulator.Run();
             //TossingCoinsForAdollar.Run();
             //Coin.Run();
             //RoulettePocket.Run();
