@@ -6,11 +6,12 @@ namespace Arrays
     {
         public static void Run()
         {
-            int jan = 50;
-            int feb = 40;
-            int mar = 30;
-
-            var result = CollectRainData(new double[] { jan, feb, mar }, 3);
+            int jan = 10;
+            int feb = 20;
+            int mar = 5;
+            int apr = 40;
+            // 
+            var result = CollectRainData(new double[] { jan, feb, mar, apr }, 3);
             Console.WriteLine(result);
 
 
@@ -33,34 +34,36 @@ namespace Arrays
 
             else if (function == 2)
             {
-                output = output / 3;
+                output = output / 4;
             }
 
             else if (function == 3)
             {
-                int max = 0;
+
+                double max = arr[0];
                 for (int i = 1; i < arr.Length; i++)
                 {
 
-                    if (arr[i] > arr[max])
+                    if (arr[i] > max)
                     {
-                        max = i;
+                        max = arr[i];
+
                     }
-                    return max;
                 }
+                return max;
             }
             else if (function == 4)
             {
-                int min = 0;
+                double min = arr[0];
 
                 for (int i = 1; i < arr.Length; i++)
                 {
-                    if (arr[i] < arr[min])
+                    if (arr[i] < min)
                     {
-                        min = i;
+                        min = arr[i];
                     }
-                    return min;
                 }
+                return min;
             }
             return output;
 

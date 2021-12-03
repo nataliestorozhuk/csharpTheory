@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Arrays
+﻿namespace Arrays
 {
     class PayrollClass
     {
@@ -13,7 +7,7 @@ namespace Arrays
         private double[] payRate = new double[7];
         private double[] wages = new double[7];
 
-
+      
 
         public int[] EmployeeId
         {
@@ -39,7 +33,7 @@ namespace Arrays
         public double GetGrossPay(int employeeId)
         {
 
-            return;   
+            return 1;
         }
     }
 }
