@@ -33,7 +33,7 @@
         public double GetGrossPay(int employeeId)
         {
 
-            return Hours ;
+            return hours * payRate;
         }
     }
 }
