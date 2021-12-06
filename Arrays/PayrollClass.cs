@@ -2,10 +2,10 @@
 {
     class PayrollClass
     {
-        private int[] employeeId = { 5658845, 4520125, 7895122, 8777541, 8451277, 1302850, 7580489 };
-        private int[] hours = new int[7];
-        private double[] payRate = new double[7];
-        private double[] wages = new double[7];
+        private int[] employeeId = { 5658845, 4520125/* 7895122, 8777541, 8451277, 1302850, 7580489*/ };
+        private int[] hours = new int[2];
+        private double[] payRate = new double[2];
+        private double[] wages = new double[2];
 
       
 
@@ -33,7 +33,7 @@
         public double GetGrossPay(int employeeId)
         {
 
-            return 1;
+            return Hours ;
         }
     }
 }

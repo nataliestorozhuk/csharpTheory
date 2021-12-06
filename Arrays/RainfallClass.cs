@@ -37,6 +37,7 @@ namespace Arrays
                 output = output / 4;
             }
 
+            // How to find max value in the array
             else if (function == 3)
             {
 
@@ -52,6 +53,8 @@ namespace Arrays
                 }
                 return max;
             }
+
+            // How to find min value in the array
             else if (function == 4)
             {
                 double min = arr[0];
