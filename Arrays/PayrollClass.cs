@@ -30,10 +30,10 @@
             set { wages = value; }
         }
 
-        public double GetGrossPay(int employeeId)
-        {
+        //public double GetGrossPay(int employeeId)
+        //{
 
-            return hours * payRate;
-        }
+        //    return hours * payRate;
+        //}
     }
 }

@@ -6,7 +6,8 @@ namespace Arrays
     {
         static void Main(string[] args)
         {
-            RainfallClass.Run();
+            //RainfallClass.Run();
+            ChargeAccountValidation.Run();
         }
     }
 }
