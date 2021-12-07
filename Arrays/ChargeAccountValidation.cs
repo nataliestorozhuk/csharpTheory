@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
 
 namespace Arrays
 {
@@ -7,28 +8,22 @@ namespace Arrays
     {
         public static void Run()
         {
-            ArrayList array = new ArrayList();
-            array.Add(5658845);
-            array.Add(4520125);
-            array.Add(7895122);
-            array.Add(8777541);
-            array.Add(8451277);
-            array.Add(1302850);
-            array.Add(8080152);
-            array.Add(4562555);
-            array.Add(5552012);
-            array.Add(5050552);
-            array.Add(7825877);
-            array.Add(1250255);
+            int result;
+
+            int[] array = {5658845, 4520125, 7895122, 8777541, 8451277, 1302850, 8080152, 4562555, 5552012, 5050552, 7825877, 1250255 };
+            //List<int> a = new List<int>();
 
             Console.WriteLine("Enter the charge account number: ");
             int num = Convert.ToInt32(Console.ReadLine());
-            if (num != array == true)
+
+            result = SequantialSearch(array, num);
+
+            if (result != -1)
             {
                 Console.WriteLine("The number is valid. ");
             }
             else
-                Console.WriteLine("The number is valid. ");
+                Console.WriteLine("The number is invalid. ");
         }
 
         public static int SequantialSearch(int[] array, int value)
