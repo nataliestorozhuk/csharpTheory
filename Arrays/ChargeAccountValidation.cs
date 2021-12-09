@@ -11,17 +11,17 @@ namespace Arrays
 
             int[] array = { 5658845, 4520125, 7895122, 8777541, 8451277, 1302850, 8080152, 4562555, 5552012, 5050552, 7825877, 1250255 };
             //List<int> a = new List<int>();
-            //string path = @"D:\OneDriveInn\OneDrive\Desktop\ChargeAccountModification.txt";
+            string path = @"D:\OneDriveInn\OneDrive\Desktop\ChargeAccountModification.txt";
 
-            //if (!File.Exists(path))
-            //{
+            if (!File.Exists(path))
+            {
 
-            //    int[] createText = { 5658845, 4520125, 7895122, 8777541, 8451277, 1302850, 8080152, 4562555, 5552012,
-            //        5050552, 7825877, 1250255 };
+                int[] intArr = { 5658845, 4520125, 7895122, 8777541, 8451277, 1302850, 8080152, 4562555, 5552012,
+                    5050552, 7825877, 1250255 };
 
-            //    // Array.Convert()
-            //    File.WriteAllLines(path, Array.ConvertAll(createText, x => x.ToString()));
-            //}
+                // Array.Convert(). x-meaning every element from the array
+                File.WriteAllLines(path, Array.ConvertAll(intArr, x => x.ToString()));
+            }
 
             Console.WriteLine("Enter the charge account number: ");
             int num = Convert.ToInt32(Console.ReadLine());
@@ -57,8 +57,6 @@ namespace Arrays
             return element;
         }
 
-        public static int GetGreaterThenN(int[] array, int value) { 
-        
-        }
+
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Arrays
 {
@@ -6,14 +7,32 @@ namespace Arrays
     {
         public static void Run()
         {
-            int result;
+
 
             int[] array = { 5, 15, 7, 21, 97, 3, 48, 23 };
 
             Console.WriteLine("Enter a number: ");
             int num = Convert.ToInt32(Console.ReadLine());
 
-            result = GetGreaterThenN(array, num);
+            //GetGreaterThenN(array, num);
+
+
+            //foreach (var item in GetGreaterThenN2(array, num) )
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            //foreach (var item in GetGreaterThenN2(array, num))
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+
+            foreach (var item in GetGreaterThenN3(array, num))
+            {
+                Console.WriteLine(item);
+            }
+
 
         }
 
@@ -38,16 +57,51 @@ namespace Arrays
             return element;
         }
 
-        public static int GetGreaterThenN(int[] array, int n)
+        public static void GetGreaterThenN(int[] array, int n)
         {
             for (int i = 0; i < array.Length; i++)
             {
-                if (n > array[i])
+                if (array[i] > n)
                 {
-                    Console.WriteLine("\nn");
+                    Console.WriteLine(array[i]);
                 }
             }
-            return 1;
+        }
+
+
+        public static int[] GetData()
+        {
+            return new int[] { 10, 20, 343, 5, 3, 55 };
+        }
+
+
+        public static IEnumerable<int> GetGreaterThenN2(int[] array, int n)
+        {
+            foreach (int item in array)
+            {
+                if (item > n)
+                {
+                    yield return item;
+                }
+            }
+        }
+
+
+        public static int[] GetGreaterThenN3(int[] array, int n)
+        {
+            int[] outputArr = new int[array.Length];
+
+            int counter = 0;
+            foreach (int item in array)
+            {
+                if (item > n)
+                {
+                    outputArr[counter] = item;
+                    counter++;
+                }
+            }
+
+            return outputArr;
         }
     }
 }

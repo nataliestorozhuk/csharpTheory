@@ -6,8 +6,10 @@ namespace Arrays
     {
         static void Main(string[] args)
         {
+            LargerThanN.Run();
+            //ChargeAccountValidation.Run();
             //RainfallClass.Run();
-            ChargeAccountValidation.Run();
+
         }
     }
 }
