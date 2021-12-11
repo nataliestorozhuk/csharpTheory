@@ -10,7 +10,7 @@ namespace Arrays
 
 
 
-            DriversLicenseExam.Run();
+            //DriversLicenseExam.Run();
             //SamplesArray.Run();
             //LargerThanN.Run();
             //ChargeAccountValidation.Run();
