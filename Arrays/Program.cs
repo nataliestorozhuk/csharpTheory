@@ -9,7 +9,10 @@ namespace Arrays
         {
 
 
-            GradeBook.Run();
+
+
+            ArrayOperations.Run();
+            //GradeBook.Run();
             //DriversLicenseExam.Run();
             //SamplesArray.Run();
             //LargerThanN.Run();
