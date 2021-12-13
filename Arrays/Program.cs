@@ -10,8 +10,8 @@ namespace Arrays
 
 
 
-
-            ArrayOperations.Run();
+            AverageStepsTaken.Run();
+            //ArrayOperations.Run();
             //GradeBook.Run();
             //DriversLicenseExam.Run();
             //SamplesArray.Run();
