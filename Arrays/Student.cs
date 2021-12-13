@@ -46,15 +46,15 @@
         public char GetLetterGrade()
         {
 
-            if (Average >= 90.99 && Average <= 100)
+            if (Average >= 90 && Average <= 100)
                 LetterGrade = 'A';
-            else if (Average >= 80.99 && Average <= 89.99)
+            else if (Average >= 80 && Average <= 89.99)
                 LetterGrade = 'B';
-            else if (Average >= 70.99 && Average <= 79.99)
+            else if (Average >= 70 && Average <= 79.99)
                 LetterGrade = 'C';
-            else if (Average >= 60.99 && Average <= 69.99)
+            else if (Average >= 60 && Average <= 69.99)
                 LetterGrade = 'D';
-            else if (Average <= 59.99)
+            else if (Average <= 59)
                 LetterGrade = 'F';
             return LetterGrade;
         }
