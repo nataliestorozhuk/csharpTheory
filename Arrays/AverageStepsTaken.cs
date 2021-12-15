@@ -40,12 +40,12 @@ namespace Arrays
                     //}
 
 
-                    Console.WriteLine($"The average steps per month {i + 1} is: { avg}");
+                    Console.WriteLine($"The average steps per month {i + 1} is: \t {avg}");
 
 
                 }
 
-                Console.WriteLine(total);
+              
                 //Console.WriteLine($"The average number of steps taken in January is: {GetJan(stepsIntArr)}");
                 //Console.WriteLine($"The average number of steps taken in February is: {GetFeb(stepsIntArr)}");
                 //Console.WriteLine($"The average number of steps taken in March is: {GetMar(stepsIntArr)}");
@@ -54,6 +54,10 @@ namespace Arrays
             }
 
         }
+
+
+
+        #region non dynamic
         public static int GetJan(int[] arr)
         {
             int month1 = 0;
@@ -117,5 +121,6 @@ namespace Arrays
             return month5 / 31;
         }
 
-    }
+    } 
+    #endregion
 }
