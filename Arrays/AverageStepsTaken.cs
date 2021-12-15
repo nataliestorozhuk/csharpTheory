@@ -22,15 +22,16 @@ namespace Arrays
                 int total = 0;
                 int avg = 0;
                 int minDay = 0;
+
                 for (int i = 0; i < yearArr.Length; i++)
                 {
                     // create target array where values will be copied from stepsIntArr
                     int[] targerArr = new int[yearArr[i]];
-
+                    //using Copy method of Array class 
                     Array.Copy(stepsIntArr, minDay, targerArr, 0, yearArr[i]);
 
                     minDay += yearArr[i];
-
+                    //finding average steps per month taken.
                     avg = targerArr.Sum() / yearArr[i];
 
                     //foreach (var item in targerArr)
@@ -39,7 +40,7 @@ namespace Arrays
                     //}
 
 
-                    Console.WriteLine(avg);
+                    Console.WriteLine($"The average steps per month {i+1} is: { avg}");
 
 
                 }
