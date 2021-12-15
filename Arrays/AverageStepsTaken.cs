@@ -40,7 +40,7 @@ namespace Arrays
                     //}
 
 
-                    Console.WriteLine($"The average steps per month {i+1} is: { avg}");
+                    Console.WriteLine($"The average steps per month {i + 1} is: { avg}");
 
 
                 }

@@ -9,8 +9,8 @@ namespace Arrays
         {
 
 
-
-            AverageStepsTaken.Run();
+            GassPrices.Run();
+            //AverageStepsTaken.Run();
             //ArrayOperations.Run();
             //GradeBook.Run();
             //DriversLicenseExam.Run();
