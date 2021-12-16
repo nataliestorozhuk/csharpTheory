@@ -8,7 +8,11 @@ namespace Arrays
         static void Main(string[] args)
         {
 
-            NameSearch.Run();
+
+
+
+            PhoneBookEntry.Run();
+            //NameSearch.Run();
             //GassPrices.Run();
             //AverageStepsTaken.Run();
             //ArrayOperations.Run();
