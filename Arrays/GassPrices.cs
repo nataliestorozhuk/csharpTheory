@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Linq;
 
 namespace Arrays
 {
@@ -15,8 +16,26 @@ namespace Arrays
                 string[] gasPricesArr = File.ReadAllLines(path);
                 double[] gasPricesDoubleArr = Array.ConvertAll(gasPricesArr, s => double.Parse(s));
 
+                int[] monthsInYear = { 1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12 };
+                double avg = 0;
+
+
+                for (int i = 0; i < monthsInYear.Length; i++)
+                {
+                    int weekNum = GetWeeksInTheMonth(monthsInYear[i]);
+                    double[] targerArr = new double[weekNum];
+
+                    Array.Copy(gasPricesDoubleArr, 0, targerArr, 0, weekNum);
+
+                    avg = targerArr.Sum() / weekNum;
+
+                    Console.WriteLine($"The average gas price per month {i + 1} is: \t {avg}");
+                }
+
+
                 GetLowestAvgPrice(gasPricesDoubleArr);
                 GetHighestAvgPrice(gasPricesDoubleArr);
+
             }
         }
 
@@ -54,7 +73,7 @@ namespace Arrays
                 if (gasPriceArr[i] > highest)
                 {
                     highest = gasPriceArr[i];
-                    week = i+1;
+                    week = i + 1;
                     month = new DateTime(year, 1, 1).AddDays(7 * (week - 1)).ToString("MMMM");
                 }
 
@@ -62,10 +81,17 @@ namespace Arrays
             Console.WriteLine($"The lowest average price of the year is week {week}, {month}, number:  {highest}");
         }
 
-        public static void GetAvgPriceFormMonth(double[] gasPriceArr)
+        public static int GetWeeksInTheMonth(int monthINum)
         {
+            var year = 1994;
 
+            var daysInMonth = DateTime.DaysInMonth(year, monthINum);
+            var firstDayOfMonth = (int)new DateTime(year, monthINum, 1).DayOfWeek;
+            int weeksInMonth = (int)Math.Ceiling((firstDayOfMonth + daysInMonth) / 7.0);
+            return weeksInMonth;
         }
+
+
     }
 }
 
