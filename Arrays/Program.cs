@@ -8,8 +8,8 @@ namespace Arrays
         static void Main(string[] args)
         {
 
-
-            GassPrices.Run();
+            NameSearch.Run();
+            //GassPrices.Run();
             //AverageStepsTaken.Run();
             //ArrayOperations.Run();
             //GradeBook.Run();
