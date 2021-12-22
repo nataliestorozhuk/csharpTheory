@@ -10,8 +10,8 @@ namespace Arrays
 
 
 
-
-            PhoneBookEntry.Run();
+            Question.Run();
+            //PhoneBookEntry.Run();
             //NameSearch.Run();
             //GassPrices.Run();
             //AverageStepsTaken.Run();
