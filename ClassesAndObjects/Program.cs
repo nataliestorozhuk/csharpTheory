@@ -6,7 +6,9 @@ namespace ClassesAndObjects
     {
         static void Main(string[] args)
         {
-            
+
+
+            Area.Run();
         }
     }
 }
