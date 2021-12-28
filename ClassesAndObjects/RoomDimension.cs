@@ -7,11 +7,11 @@ namespace ClassesAndObjects
 
         public static void Run()
         {
-            double lenght = 15.5;
+            double length = 15.5;
             double widht = 12.3;
             double pricePerSquareFoot = 3.50;
 
-            RoomDimension rd = new RoomDimension(lenght, widht);
+            RoomDimension rd = new RoomDimension(length, widht);
             RoomCarpet roomCarpet = new RoomCarpet(rd, pricePerSquareFoot);
 
             Console.WriteLine(rd);
@@ -19,23 +19,23 @@ namespace ClassesAndObjects
 
 
         }
-        public double Lenght { get; set; }
+        public double Length { get; set; }
         public double Width { get; set; }
 
-        public RoomDimension(double lenght, double width)
+        public RoomDimension(double length, double width)
         {
-            this.Lenght = lenght;
+            this.Length = length;
             this.Width = width;
         }
 
         public double GetRoomArea()
         {
-            return Lenght * Width;
+            return Length * Width;
         }
 
         public override string ToString()
         {
-            return $"Dimension of the room are: (length = {Lenght}, width = {Width}).";
+            return $"Dimension of the room are: (length = {Length}, width = {Width}).";
         }
     }
 
