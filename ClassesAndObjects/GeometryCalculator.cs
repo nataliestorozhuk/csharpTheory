@@ -6,6 +6,7 @@ namespace ClassesAndObjects
     {
         public static void Run()
         {
+            int opt;
 
             Console.WriteLine("Geometry Calculator");
             Console.WriteLine();
@@ -14,18 +15,20 @@ namespace ClassesAndObjects
             Console.WriteLine();
             Console.WriteLine("Please enter your choice from 1-4:");
             String option = Console.ReadLine();
-            double opt = Convert.ToDouble(option);
+            opt = Convert.ToInt32(option);
 
-            if (opt < 1 || opt > 4)
+            while (opt < 1 || opt > 4)
             {
-                Console.WriteLine("The number is outside the range. Please enter a number from 1-4.");
+                Console.WriteLine("The number is outside the range. Please enter a number 1, 2, 3 or 4: ");
+                option = Console.ReadLine();
+                opt = Convert.ToInt32(option);
             }
 
-            else if (opt == 1)
+            if (opt == 1)
             {
                 Console.WriteLine("Please enter the radius of the circle: ");
                 string radius = Console.ReadLine();
-                double r = Convert.ToDouble(radius);
+                double r = Convert.ToDouble(radius);         
 
                 Console.WriteLine($"The area of the circle is: {GetCircleArea(r)}");
             }
@@ -37,7 +40,7 @@ namespace ClassesAndObjects
                 double l = Convert.ToDouble(length);
                 Console.WriteLine("Please enter a width of the rectangle: ");
                 string width = Console.ReadLine();
-                double w = Convert.ToDouble(width);
+                double w = Convert.ToDouble(width);               
                 Console.WriteLine($"The area of the rectangle is: {GetRectangleArea(l, w)}");
             }
             else if (opt == 3)
@@ -47,8 +50,7 @@ namespace ClassesAndObjects
                 double bL = Convert.ToDouble(baseLength);
                 Console.WriteLine("Please enter triangle's height: ");
                 string height = Console.ReadLine();
-                double h = Convert.ToDouble(height);
-
+                double h = Convert.ToDouble(height);                
                 Console.WriteLine($"The area of the triangle is: {GetRectangleArea(bL, h)}");
             }
             else if (opt == 4)
@@ -57,29 +59,14 @@ namespace ClassesAndObjects
 
         public static double GetCircleArea(double radius)
         {
-            if (radius < 1)
-            {
-                Console.WriteLine("Error! Cannot accept negative values.");
-
-            }
-
             return Math.PI * Math.Pow(radius, 2);
         }
         public static double GetRectangleArea(double length, double width)
         {
-            if (length < 1 && width < 1)
-            {
-                Console.WriteLine("Error! Cannot accept negative values.");
-
-            }
             return length * width;
         }
         public static double GetTriangleArea(double baseLength, double height)
         {
-            if (baseLength < 1 && height < 1)
-            {
-                Console.WriteLine("Error! Cannot accept negative values.");
-            }
             return baseLength * height * 0.5;
         }
     }
