@@ -7,8 +7,8 @@ namespace ClassesAndObjects
         static void Main(string[] args)
         {
 
-
-            GeometryCalculator.Run();
+            FuelGauge.Run();
+            //GeometryCalculator.Run();
             //TheParkedCar.Run();
             //Month.Run();
             //LandTract.Run();
