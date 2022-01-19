@@ -8,8 +8,8 @@ namespace ClassesAndObjects
         static void Main(string[] args)
         {
 
-
-            SalesReceiptFile.Run();
+            FirstToOneGame.Run();
+            //SalesReceiptFile.Run();
             //CashRegister.Run();
             //FuelGauge.Run();
             //GeometryCalculator.Run();
