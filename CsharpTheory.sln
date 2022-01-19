@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31829.152
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Classes", "CsharpTheory\Classes.csproj", "{3714A484-D34E-4837-8695-4AA123600EDC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Chapter6_Classes", "CsharpTheory\Chapter6_Classes.csproj", "{3714A484-D34E-4837-8695-4AA123600EDC}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Arrays", "Arrays\Arrays.csproj", "{345E5BA0-0E83-44A1-9FB7-F7EC3E926B1E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassesAndObjects", "ClassesAndObjects\ClassesAndObjects.csproj", "{676D6890-DE9B-483C-99C6-5390BCC2DE6E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Chapter8_ClassesAndObjects", "ClassesAndObjects\Chapter8_ClassesAndObjects.csproj", "{676D6890-DE9B-483C-99C6-5390BCC2DE6E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

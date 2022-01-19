@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Chapter8_ClassesAndObjects;
+using System;
 
 namespace ClassesAndObjects
 {
@@ -7,7 +8,8 @@ namespace ClassesAndObjects
         static void Main(string[] args)
         {
 
-            FuelGauge.Run();
+            CashRegister.Run();
+            //FuelGauge.Run();
             //GeometryCalculator.Run();
             //TheParkedCar.Run();
             //Month.Run();
