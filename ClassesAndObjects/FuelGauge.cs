@@ -13,10 +13,10 @@ namespace ClassesAndObjects
             FuelGauge fuel = new FuelGauge();
             Odometer odometer = new Odometer(0, fuel);
 
-            for (int i = 0; i < FuelGauge.; i++)
-            {
-                fuel.AddGallons();
-            }
+            //for (int i = 0; i < FuelGauge.; i++)
+            //{
+            //    fuel.AddGallons();
+            //}
 
             // dive until you can't drive no longer.
             while (fuel.AmountOfFuel > 0)
