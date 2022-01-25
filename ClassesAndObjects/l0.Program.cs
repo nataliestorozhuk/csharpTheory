@@ -1,4 +1,4 @@
-﻿using Chapter8_ClassesAndObjects;
+﻿using Chapter8_ClassesAndObjectsj;
 using System;
 
 namespace ClassesAndObjects
