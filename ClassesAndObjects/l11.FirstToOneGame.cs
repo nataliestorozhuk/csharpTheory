@@ -23,14 +23,11 @@ namespace Chapter8_ClassesAndObjects
             Dice dice = new Dice(6);
 
 
-            Player player1 = new Player("Nick", 50);
-            Player player2 = new Player("Nata", 50);
-
-            // think when loop needs to stop ... now you have an infinite loop.
-            // it should be a range 
+            Player player1 = new Player("Nick", 25);
+            Player player2 = new Player("Nata", 25);
 
 
-            int player1Points = 0, player2Points = 0;
+            int player1Points, player2Points;
 
             for (int i = 1; i < gameTime; i++)
             {
@@ -38,22 +35,28 @@ namespace Chapter8_ClassesAndObjects
                 player2Points = player2.Points -= dice.Roll();
 
                 // within the range of 10 but 1 is preferred 
+                if (player1Points == 1)
+                {
+                    System.Console.WriteLine($"{player1.Name} is a winner!!!");
+                    break;
 
-            }
+                }
+                else if (player1Points < 1)
+                {
+                    player1.Points += dice.Roll();
 
-            if (player1Points >= 1 || player1Points <= 5)
-            {
-                System.Console.WriteLine($"{player1.Name} is a winner!!!");
-            }
-            else if (player2Points >= 1 || player2Points <= 5)
-            {
-                System.Console.WriteLine($"{player2.Name} is a winner!!!");
-            }
-            else
-            {
-                System.Console.WriteLine("Draw. Play again.");
-            }
+                }
+                else if (player2Points == 1)
+                {
+                    System.Console.WriteLine($"{player2.Name} is a winner!!!");
+                    break;
+                }
+                else if (player2Points < 1)
+                {
+                    player2.Points += dice.Roll();
 
+                }
+            }
         }
     }
 
