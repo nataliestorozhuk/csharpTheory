@@ -8,7 +8,8 @@ namespace ClassesAndObjects
         static void Main(string[] args)
         {
 
-            FirstToOneGame.Run();
+            l12HeadsOrTailsGame.Run();
+            //FirstToOneGame.Run();
             //SalesReceiptFile.Run();
             //CashRegister.Run();
             //FuelGauge.Run();
