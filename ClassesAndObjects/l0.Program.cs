@@ -7,11 +7,7 @@ namespace ClassesAndObjects
     class Program
     {
         static void Main(string[] args)
-        {
-
-
-            BackwardString.Run();
-
+        {          
 
             //l12HeadsOrTailsGame.Run();
             //FirstToOneGame.Run();
