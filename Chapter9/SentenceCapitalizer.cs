@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace Chapter9
 {
@@ -6,28 +7,39 @@ namespace Chapter9
     {
         public static void Run()
         {
-            Console.WriteLine("Please enter a string");
+            String text = "hello world. the weather is beautiful. sunny day.";
 
-            string str = Console.ReadLine();
+            //Console.WriteLine($"User entered {text}");
 
-            Console.WriteLine($"User entered {str}");
-            Console.WriteLine($"It will be {WordCounter.GetWordsAmount(str)} words.");
+            Console.WriteLine(SentenceCapitalizer.GetSentenceCapitalize(text));
 
         }
 
-        public static int GetSentenceCapitalize(string str)
+        public static string GetSentenceCapitalize(string str)
         {
-            int a = 0, myWord = 1;
+            int pos = 0;
+            bool capitalize = true;
 
-            while (a <= str.Length - 1)
+            StringBuilder sb = new StringBuilder(str);
+
+            while (pos < sb.Length)
             {
-                if (str[a] == ' ' || str[a] == '\n' || str[a] == '\t')
+                if (sb[pos] == '.')
                 {
-                    myWord++;
+                    capitalize = true;
                 }
-                a++;
+                else if (capitalize && !Char.IsWhiteSpace(sb[pos]))
+                {
+                    sb[pos] = Char.ToUpper(sb[pos]);
+                    capitalize = false;
+                }
+                pos++;
+
             }
-            return myWord;
+            return sb.ToString();
         }
+
     }
 }
+
+

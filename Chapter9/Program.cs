@@ -12,8 +12,8 @@ namespace Chapter9
 
 
 
-
-            WordCounter.Run();
+            SentenceCapitalizer.Run();
+            //WordCounter.Run();
             //BackwardString.Run();
         }
     }
