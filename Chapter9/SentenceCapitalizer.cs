@@ -1,14 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Chapter9
 {
-    class WordCounter
+    class SentenceCapitalizer
     {
-
         public static void Run()
         {
             Console.WriteLine("Please enter a string");
@@ -20,7 +15,7 @@ namespace Chapter9
 
         }
 
-        public static int GetWordsAmount(string str)
+        public static int GetSentenceCapitalize(string str)
         {
             int a = 0, myWord = 1;
 
@@ -30,7 +25,7 @@ namespace Chapter9
                 {
                     myWord++;
                 }
-                a++;  
+                a++;
             }
             return myWord;
         }

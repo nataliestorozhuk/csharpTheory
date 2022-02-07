@@ -13,9 +13,6 @@ namespace Chapter9
 
 
 
-
-
-
             WordCounter.Run();
             //BackwardString.Run();
         }
