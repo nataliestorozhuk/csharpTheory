@@ -10,8 +10,8 @@ namespace Chapter9
 
 
 
-
-            VowelsAndConsonants.Run();
+            l5PasswordVerifier.Run();
+            //VowelsAndConsonants.Run();
             //SentenceCapitalizer.Run();
             //WordCounter.Run();
             //BackwardString.Run();
