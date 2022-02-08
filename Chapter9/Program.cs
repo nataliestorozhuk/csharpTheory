@@ -11,8 +11,8 @@ namespace Chapter9
 
 
 
-
-            SentenceCapitalizer.Run();
+            VowelsAndConsonants.Run();
+            //SentenceCapitalizer.Run();
             //WordCounter.Run();
             //BackwardString.Run();
         }
