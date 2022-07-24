@@ -6,7 +6,7 @@ namespace Chapter9
     {
         public static void Run()
         {
-            string usersPassword = "Jjjj5f";
+            string usersPassword = "Jjjjf";
 
             if (l5PasswordVerifier.ValidPassword(usersPassword))
             {
@@ -53,7 +53,7 @@ namespace Chapter9
                 if (Char.IsUpper(password[index]))
                 {
                     valid = true;
-                    break;
+
                 }
                 index++;
             }
@@ -70,7 +70,6 @@ namespace Chapter9
                 if (Char.IsLower(password[index]))
                 {
                     valid = true;
-                    break;
                 }
                 index++;
             }

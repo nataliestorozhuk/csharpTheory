@@ -10,11 +10,12 @@ namespace Chapter9
 
 
 
-            l5PasswordVerifier.Run();
+            //l5PasswordVerifier.Run();
             //VowelsAndConsonants.Run();
             //SentenceCapitalizer.Run();
             //WordCounter.Run();
             //BackwardString.Run();
+            l6TelemarketingPhoneNumList.Run();
         }
     }
 }
