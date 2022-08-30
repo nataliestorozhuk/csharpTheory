@@ -15,7 +15,9 @@ namespace Chapter9
             //SentenceCapitalizer.Run();
             //WordCounter.Run();
             //BackwardString.Run();
-            l6TelemarketingPhoneNumList.Run();
+            //l6TelemarketingPhoneNumList.Run();
+            //l7CheckWriter.Run();
+            l8SumOfDigitsInString.Run();
         }
     }
 }
