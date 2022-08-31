@@ -17,7 +17,8 @@ namespace Chapter9
             //BackwardString.Run();
             //l6TelemarketingPhoneNumList.Run();
             //l7CheckWriter.Run();
-            l8SumOfDigitsInString.Run();
+            //l8SumOfDigitsInString.Run();
+            l9SumOfNumbersInString.Run();
         }
     }
 }
