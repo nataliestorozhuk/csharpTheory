@@ -7,9 +7,6 @@ namespace Chapter9
         static void Main(string[] args)
         {
 
-
-
-
             //l5PasswordVerifier.Run();
             //VowelsAndConsonants.Run();
             //SentenceCapitalizer.Run();
@@ -19,7 +16,8 @@ namespace Chapter9
             //l7CheckWriter.Run();
             //l8SumOfDigitsInString.Run();
             //l9SumOfNumbersInString.Run();
-            l10WordCounter.Run();
+            //l10WordCounter.Run();
+            l11SalesAnalysis.Run();
         }
     }
 }
