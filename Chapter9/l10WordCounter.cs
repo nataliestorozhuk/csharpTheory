@@ -14,8 +14,16 @@ namespace Chapter9
 
             string text = "the big red fox jumped over the lazy dog";
 
-            int wordCount = 0;
+            int wordCount = 1;
 
+            for (int i = 0; i < text.Length; i++)
+            {
+                if (text[i] == ' ')
+                {
+                    wordCount++;
+                } 
+            }
+            Console.WriteLine($"There are {wordCount} words in a sentence");
         }
     }
 }
