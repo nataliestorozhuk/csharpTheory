@@ -17,7 +17,8 @@ namespace Chapter9
             //l8SumOfDigitsInString.Run();
             //l9SumOfNumbersInString.Run();
             //l10WordCounter.Run();
-            l11SalesAnalysis.Run();
+            //l11SalesAnalysis.Run();
+            l12MiscellaneousStringOperations.Run();
         }
     }
 }
