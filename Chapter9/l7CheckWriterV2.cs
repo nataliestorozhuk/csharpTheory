@@ -57,7 +57,10 @@ namespace Chapter9
 					testTens = false;
 
 					//gets the digit value that we are going to convert by subtracting 48 from the ASCII value of the char
-					digit = (int)paymentChar[count] - 48;
+					dDear TH Weiss,
+
+Could you please be so kind to file ISF per the documentation attached.
+
 
 					//handles conversion of values between 1000-9999
 					if (paymentInt <= 9999 && paymentInt >= 1000) //deals with 4 digits
