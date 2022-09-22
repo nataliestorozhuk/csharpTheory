@@ -12,7 +12,7 @@ namespace Chapter9
         public static void Run()
         {
             var sentence = "StopAndSmellTheRoses.";
-           //to keep track of the indexes
+           //to keep track of the indexes of the elements in the string array.
             int index = 0;
             string result = " ";
 
