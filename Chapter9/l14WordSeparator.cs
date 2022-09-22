@@ -11,8 +11,25 @@ namespace Chapter9
 
         public static void Run()
         {
-            
+            var sentence = "StopAndSmellTheRoses.";
+           //to keep track of the indexes
+            int index = 0;
+            string result = " ";
 
+            for (int i = 0; i < sentence.Length; i++)
+            {
+                if(Char.IsUpper(sentence[i]) && index > 0)
+                {
+                    result += " ";
+                    result += Char.ToLower(sentence[i]);
+            }else
+            {
+                result += sentence[i];
+            }
+                index++;
+                }
+
+            Console.WriteLine("Original sentence: " + sentence + "\nFormatted sentence: " + result);
 
         }
     }
