@@ -20,7 +20,8 @@ namespace Chapter9
             //l11SalesAnalysis.Run();
             //l12MiscellaneousStringOperations.Run();
             //l14WordSeparator.Run();
-            l15PigLatin.Run();
+            //l15PigLatin.Run();
+            l16LongestWordInString.Run();
         }
     }
 }

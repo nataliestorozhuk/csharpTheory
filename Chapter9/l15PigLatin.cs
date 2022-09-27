@@ -11,6 +11,17 @@ namespace Chapter9
 
         public static void Run()
         {
+            string sentence = "I SLEPT MOST OF THE NIGHT";
+
+            int index = 0;
+            string result = " ";
+
+            for (int i = 0; i < sentence.Length; i++)
+            {
+
+
+            }
+
 
 
         }
