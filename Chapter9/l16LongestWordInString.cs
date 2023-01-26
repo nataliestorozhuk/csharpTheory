@@ -11,7 +11,7 @@ namespace Chapter9
 
         public static void Run()
         {
-            string sentence = ("The quick brown fox jumped over the lazy dog flslslslslslslsls");
+            string sentence = ("The quick brown fox jumped over the lazy dog ");
 
             string[] words = sentence.Split(" ");
 

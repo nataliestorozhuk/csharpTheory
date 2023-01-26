@@ -13,17 +13,39 @@ namespace Chapter9
         {
             string sentence = "I SLEPT MOST OF THE NIGHT";
 
-            int index = 0;
-            string result = " ";
-
-            for (int i = 0; i < sentence.Length; i++)
-            {
-
-
-            }
+            string[] words = sentence.Split(' ');
+            string[] pigLatinWords = words.Select(ConvertToPigLatin).ToArray();
+            string pigLatinSentence = string.Join(" ", pigLatinWords);
+            
 
 
 
         }
+
+         static  string ConvertToPigLatin(string word)
+        {
+            if (word.Length == 0)
+            {
+                return word;
+            }
+
+            char firstLetter = word[0];
+
+            if (IsVowel(firstLetter))
+            {
+                return word + "way";
+            }
+            else
+            {
+                return word.Substring(1) + firstLetter + "ay";
+            }
+        }
+
+        static bool IsVowel(char letter)
+        {
+            return "aeiouAEIOU".IndexOf(letter) != -1;
+        }
+
+    }
     }
 }
