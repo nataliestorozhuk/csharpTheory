@@ -83,13 +83,16 @@ namespace Arrays
 
         public static int GetWeeksInTheMonth(int monthINum)
         {
-            var year = 1994;
+            var year = 1995;
+
 
             var daysInMonth = DateTime.DaysInMonth(year, monthINum);
             var firstDayOfMonth = (int)new DateTime(year, monthINum, 1).DayOfWeek;
             int weeksInMonth = (int)Math.Ceiling((firstDayOfMonth + daysInMonth) / 7.0);
             return weeksInMonth;
         }
+
+
 
 
     }
