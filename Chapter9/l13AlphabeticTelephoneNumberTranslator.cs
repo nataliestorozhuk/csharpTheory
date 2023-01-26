@@ -27,6 +27,25 @@ namespace Chapter9
             { 'w', 9 }, { 'x', 9 }, { 'y', 9 }, { 'z', 9 }
         };
 
+
+            // Convert the alphabetic characters in the number to their numeric equivalents
+            string convertedNumber = "";
+            foreach (char c in number)
+            {
+                if (char.IsLetter(c))
+                {
+                    convertedNumber += letterToNumber[char.ToLower(c)];
+                }
+                else
+                {
+                    convertedNumber += c;
+                }
+            }
+
+
+            // Display the converted number
+            Console.WriteLine("Converted number: " + convertedNumber);
+
         }
     }
 }
