@@ -16,8 +16,8 @@ namespace Chapter9
             string[] words = sentence.Split(' ');
             string[] pigLatinWords = words.Select(ConvertToPigLatin).ToArray();
             string pigLatinSentence = string.Join(" ", pigLatinWords);
-            
 
+            Console.WriteLine("Pig Latin: " + pigLatinSentence);
 
 
         }
@@ -48,4 +48,4 @@ namespace Chapter9
 
     }
     }
-}
+
