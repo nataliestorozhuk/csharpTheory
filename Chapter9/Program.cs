@@ -19,10 +19,11 @@ namespace Chapter9
             //l10WordCounter.Run();
             //l11SalesAnalysis.Run();
             //l12MiscellaneousStringOperations.Run();
-            l13AlphabeticTelephoneNumberTranslator.Run();
+            //l13AlphabeticTelephoneNumberTranslator.Run();
             //l14WordSeparator.Run();
             //l15PigLatin.Run();
             //l16LongestWordInString.Run();
+            l17MorseCodeConverter.Run();
         }
     }
 }
