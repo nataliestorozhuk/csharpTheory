@@ -13,7 +13,7 @@ namespace Chapter9
             //WordCounter.Run();
             //BackwardString.Run();
             //l6TelemarketingPhoneNumList.Run();
-            l7CheckWriter.Run();
+            //l7CheckWriter.Run();
             //l8SumOfDigitsInString.Run();
             //l9SumOfNumbersInString.Run();
             //l10WordCounter.Run();
@@ -24,6 +24,9 @@ namespace Chapter9
             //l15PigLatin.Run();
             //l16LongestWordInString.Run();
             //l17MorseCodeConverter.Run();
+
+
+            l10PersonAndCustomerClasses.Run();    
         }
     }
 }
