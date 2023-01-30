@@ -8,304 +8,51 @@ namespace Chapter9
 {
     internal class l7CheckWriter
     {
+        static Dictionary<int, string> numbers = new Dictionary<int, string>()
+    {
+        {0, "zero"}, {1, "one"}, {2, "two"}, {3, "three"}, {4, "four"},
+        {5, "five"}, {6, "six"}, {7, "seven"}, {8, "eight"}, {9, "nine"},
+        {10, "ten"}, {11, "eleven"}, {12, "twelve"}, {13, "thirteen"},
+        {14, "fourteen"}, {15, "fifteen"}, {16, "sixteen"}, {17, "seventeen"},
+        {18, "eighteen"}, {19, "nineteen"}, {20, "twenty"}
+    };
 
         public static void Run()
         {
             var date = "08/23/2022";
             var payeesName = "John Philips";
-            var amount = "185";
-
-            WordNumber wordNumber = new WordNumber(); 
+            decimal amount  = decimal.Parse("20.15");
 
 
-            Console.WriteLine($"                                        Date: {date}\n Pay to the Order of:" +
-                $"     {payeesName}              ${amount}");
-            
-
-            //Console.WriteLine(new NumberTextConverter().ToText(amount));
+            string spelledOutAmount = "";
+            int dollars = (int)amount;
+            int cents = (int)(amount * 100) % 100;
 
 
-        }
 
-    }
-    public class WordNumber
-    {
-        String[] numbers = { "", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine" };
-
-        public String GetOnes(int num)
-        {
-            String result = "";
-
-            switch (num)
+            if (dollars > 20)
             {
-                case 0:
-
-                    result += "";
-                    break;
-
-                case 1:
-
-                    result += "one";
-                    break;
-
-                case 2:
-
-                    result += "two";
-                    break;
-
-                case 3:
-
-                    result += "three";
-                    break;
-
-                case 4:
-
-                    result += "four";
-                    break;
-
-                case 5:
-
-                    result += "five";
-                    break;
-
-                case 6:
-
-                    result += "six";
-                    break;
-
-                case 7:
-
-                    result += "seven";
-                    break;
-
-                case 8:
-
-                    result += "eight";
-                    break;
-
-                case 9:
-
-                    result += "nine";
-                    break;
-
-            }
-            return result;
-        }
-
-        public String GetTwos(int num)
-        {
-            String result = "";
-
-            switch (num)
-            {
-                case 10:
-
-                    result += "ten";
-                    break;
-
-                case 11:
-
-                    result += "eleven";
-                    break;
-
-                case 12:
-
-                    result += "twelve";
-                    break;
-
-                case 13:
-
-                    result += "thirteen";
-                    break;
-
-                case 14:
-
-                    result += "fourteen";
-                    break;
-
-                case 15:
-
-                    result += "fifteen";
-                    break;
-
-                case 16:
-
-                    result += "sixteen";
-                    break;
-
-                case 17:
-
-                    result += "seventeen";
-                    break;
-
-                case 18:
-
-                    result += "eighteen";
-                    break;
-
-                case 19:
-
-                    result += "nineteen";
-                    break;
-            }
-
-            if (num >= 1 && num <= 10)
-            {
-                switch (num)
+                spelledOutAmount += numbers[dollars / 100] + " hundred ";
+                dollars %= 100;
+                if (dollars > 0)
                 {
-                    case 0:
-                        result += "";
-                        break;
-
-                    case 1:
-                        result += "one";
-                        break;
-
-                    case 2:
-                        result += "two";
-                        break;
-
-                    case 3:
-                        result += "three";
-                        break;
-
-                    case 5:
-                        result += "five";
-                        break;
-
-                    case 6:
-                        result += "six";
-                        break;
-
-                    case 7:
-                        result += "seven";
-                        break;
-
-                    case 8:
-                        result += "eight";
-                        break;
-
-                    case 9:
-                        result += "nine";
-                        break;
+                    spelledOutAmount += numbers[dollars] + " dollars";
                 }
             }
-            return result;
-
-        }
-
-        public String GetHundreds(int num)
-        {
-            String result = "";
-
-            switch (num / 100)
+            else
             {
-
-                case 1:
-
-                    result += numbers[num / 100] + "hundred" + GetTwos((num % 100));
-                    break;
-
-                case 2:
-
-                    result += numbers[num / 100] + "hundred" + GetTwos((num % 100));
-                    break;
-
-                case 3:
-
-                    result += numbers[num / 100] + "hundred" + GetTwos((num % 100));
-                    break;
-
-                case 4:
-
-                    result += numbers[num / 100] + "hundred" + GetTwos((num % 100));
-                    break;
-
-                case 5:
-
-                    result += numbers[num / 100] + "hundred" + GetTwos((num % 100));
-                    break;
-
-                case 6:
-
-                    result += numbers[num / 100] + "hundred" + GetTwos((num % 100));
-                    break;
-
-                case 7:
-
-                    result += numbers[num / 100] + "hundred" + GetTwos((num % 100));
-                    break;
-
-                case 8:
-
-                    result += numbers[num / 100] + "hundred" + GetTwos((num % 100));
-                    break;
-
-                case 9:
-
-                    result += numbers[num / 100] + "hundred" + GetTwos((num % 100));
-                    break;
-
+                spelledOutAmount += numbers[dollars] + " dollars";
             }
-            return result;
-        }
+            spelledOutAmount += " and " + numbers[cents] + " cents";
 
-        public String GetThousands(int num)
-        {
-            String result = "";
+            Console.WriteLine("------------------------------");
+            Console.WriteLine("Date: " + date);
+            Console.WriteLine("Pay to the order of: " + payeesName);
+            Console.WriteLine("$" + amount);
+            Console.WriteLine("(" + spelledOutAmount + ")");
+            Console.WriteLine("------------------------------");
 
-            int thousand = num / 1000;
-            int hundred = (num % 1000);
 
-            switch (thousand)
-            {
-
-                case 1:
-
-                    result += numbers[thousand] + "thousand" + GetTwos(hundred) + "hundred" + GetTwos((num % 1000) % 100);
-                    break;
-
-                case 2:
-
-                    result += numbers[thousand] + "thousand" + GetTwos(hundred) + "hundred" + GetTwos((num % 1000) % 100);
-                    break;
-
-                case 3:
-
-                    result += numbers[thousand] + "thousand" + GetTwos(hundred) + "hundred" + GetTwos((num % 1000) % 100);
-                    break;
-
-                case 4:
-
-                    result += numbers[thousand] + "thousand" + GetTwos(hundred) + "hundred" + GetTwos((num % 1000) % 100);
-                    break;
-
-                case 5:
-
-                    result += numbers[thousand] + "thousand" + GetTwos(hundred) + "hundred" + GetTwos((num % 1000) % 100);
-                    break;
-
-                case 6:
-
-                    result += numbers[thousand] + "thousand" + GetTwos(hundred) + "hundred" + GetTwos((num % 1000) % 100);
-                    break;
-
-                case 7:
-
-                    result += numbers[thousand] + "thousand" + GetTwos(hundred) + "hundred" + GetTwos((num % 1000) % 100);
-                    break;
-
-                case 8:
-
-                    result += numbers[thousand] + "thousand" + GetTwos(hundred) + "hundred" + GetTwos((num % 1000) % 100);
-                    break;
-
-                case 9:
-
-                    result += numbers[thousand] + "thousand" + GetTwos(hundred) + "hundred" + GetTwos((num % 1000) % 100);
-                    break;
-            }
-            return result;
         }
     }
 }
