@@ -1,2 +1,17 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using Chapter10Inheritance;
+using System;
+
+namespace Chapter10Inheritance
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            l7PersonAndCustomerClasses.Run();
+
+
+
+        }
+    }
+}

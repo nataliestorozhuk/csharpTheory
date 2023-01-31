@@ -26,7 +26,6 @@ namespace Chapter9
             //l17MorseCodeConverter.Run();
 
 
-            l10PersonAndCustomerClasses.Run();    
         }
     }
 }
