@@ -104,7 +104,7 @@ namespace Chapter10Inheritance
             pw2.EmployeeNumber = ("222-L");
             pw2.HireDate = ("12-12-2005");
             pw2.Shift = (ProductionWorker.NIGHT_SHIFT);
-            pw2.HourlyPayRate =    (18.50);
+            pw2.HourlyPayRate = (18.50);
 
             Console.WriteLine("\nHere's the second production worker. ");
             Console.WriteLine(pw2);
