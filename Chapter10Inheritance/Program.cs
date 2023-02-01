@@ -8,7 +8,8 @@ namespace Chapter10Inheritance
         static void Main(string[] args)
         {
 
-            l7PersonAndCustomerClasses.Run();
+            //l7PersonAndCustomerClasses.Run();
+            l1EmployeeAndProductionWorker.Run();
 
 
 

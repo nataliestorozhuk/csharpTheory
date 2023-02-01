@@ -93,14 +93,18 @@ namespace Chapter10Inheritance
                                                            ProductionWorker.DAY_SHIFT, 16.50);
 
             Console.WriteLine("Here's the first production worker. ");
-            Console.WriteLine(pw);
+            Console.WriteLine(pw.EmployeeName);
+            Console.WriteLine(pw.EmployeeNumber);
+            Console.WriteLine(pw.HireDate);
+            Console.WriteLine(ProductionWorker.DAY_SHIFT);
+            Console.WriteLine(pw.HourlyPayRate);
 
             ProductionWorker pw2 = new ProductionWorker();
-            pw2.setName("Joan Jones");
-            pw2.setEmployeeNumber("222-L");
-            pw2.setHireDate("12-12-2005");
-            pw2.setShift(ProductionWorker.NIGHT_SHIFT);
-            pw2.setPayRate(18.50);
+            pw2.EmployeeName = ("Joan Jones");
+            pw2.EmployeeNumber = ("222-L");
+            pw2.HireDate = ("12-12-2005");
+            pw2.Shift = (ProductionWorker.NIGHT_SHIFT);
+            pw2.HourlyPayRate =    (18.50);
 
             Console.WriteLine("\nHere's the second production worker. ");
             Console.WriteLine(pw2);
