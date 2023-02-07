@@ -6,14 +6,7 @@ using System.Threading.Tasks;
 
 namespace Chapter10Inheritance
 {
-    internal class l5CourseGrades
+    internal class l8PreferredCustomerClass
     {
-
-        public static void Run()
-        {
-
-        }
-
-        public int MyProperty { get; set; }
     }
 }

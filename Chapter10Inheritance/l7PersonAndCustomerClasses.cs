@@ -38,19 +38,20 @@ namespace Chapter10Inheritance
 
         }
 
-        class Customer : l7PersonAndCustomerClasses
-        {
-
-            public Customer(string name, string address, string telephone, int customerNumber, bool onMailingList) : base(name, address, telephone)
-            {
-                this.customerNumber = customerNumber;
-                this.onMailingList = onMailingList;
             }
 
-            public int customerNumber { get; set; }
-            public bool onMailingList { get; set; }
+    class Customer : l7PersonAndCustomerClasses
+    {
 
-
+        public Customer(string name, string address, string telephone, int customerNumber, bool onMailingList) : base(name, address, telephone)
+        {
+            this.customerNumber = customerNumber;
+            this.onMailingList = onMailingList;
         }
+
+        public int customerNumber { get; set; }
+        public bool onMailingList { get; set; }
+
+
     }
 }

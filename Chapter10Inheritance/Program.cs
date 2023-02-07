@@ -12,7 +12,8 @@ namespace Chapter10Inheritance
             //l1EmployeeAndProductionWorker.Run();
             //l2ShiftSupervisorClass.Run();
             //l3TeamLeaderClass.Run();
-            l5CourseGrades.Run();
+            //l5CourseGrades.Run();
+            l8PreferredCustomerClass.Run();
 
 
 
