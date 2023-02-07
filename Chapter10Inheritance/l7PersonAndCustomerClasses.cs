@@ -10,15 +10,15 @@ namespace Chapter10Inheritance
     {
 
 
-        public string name { get; set; }
-        public string address { get; set; }
-        public string telephone { get; set; }
+        public string Name { get; set; }
+        public string Address { get; set; }
+        public string Telephone { get; set; }
 
         public l7PersonAndCustomerClasses(string name, string address, string telephone)
         {
-            this.name = name;
-            this.address = address;
-            this.telephone = telephone;
+            this.Name = name;
+            this.Address = address;
+            this.Telephone = telephone;
         }
 
 
@@ -27,9 +27,9 @@ namespace Chapter10Inheritance
         {
             Customer customer = new Customer("John Doe", "123 Main St", "555-555-5555", 123456, true);
 
-            Console.WriteLine("Customer Name: " + customer.name);
-            Console.WriteLine("Address: " + customer.address);
-            Console.WriteLine("Telephone: " + customer.telephone);
+            Console.WriteLine("Customer Name: " + customer.Name);
+            Console.WriteLine("Address: " + customer.Address);
+            Console.WriteLine("Telephone: " + customer.Telephone);
             Console.WriteLine("Customer Number: " + customer.customerNumber);
             Console.WriteLine("On Mailing List: " + customer.onMailingList);
 
