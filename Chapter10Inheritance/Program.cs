@@ -13,7 +13,8 @@ namespace Chapter10Inheritance
             //l2ShiftSupervisorClass.Run();
             //l3TeamLeaderClass.Run();
             //l5CourseGrades.Run();
-            l8PreferredCustomerClass.Run();
+            //l8PreferredCustomerClass.Run();
+            l10Ship.Run();
 
 
 
