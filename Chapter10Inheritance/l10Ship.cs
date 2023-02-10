@@ -17,7 +17,7 @@ namespace Chapter10Inheritance
             YearBuilt = yearBuilt;
         }
 
-        public String toString()
+        public virtual String toString()
         {
             return "The ship name is " + ShipName + "." + " The year that the ship was built is: " + YearBuilt;
         }

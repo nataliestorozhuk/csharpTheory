@@ -14,7 +14,8 @@ namespace Chapter10Inheritance
             //l3TeamLeaderClass.Run();
             //l5CourseGrades.Run();
             //l8PreferredCustomerClass.Run();
-            l10Ship.Run();
+            //l10Ship.Run();
+            l11CruiseShip.Run();
 
 
 
