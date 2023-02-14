@@ -21,21 +21,21 @@ namespace Chapter10Inheritance
         }
 
         
-        public void deposit(double amount)
+        public virtual void Deposit(double amount)
         {
             Balance += amount;
             NumOfDepositsPerMonth++;
         }
 
         
-        public void withdraw(double amount)
+        public virtual void Withdraw(double amount)
         {
             Balance -= amount;
             NumOfWithdrawalsPerMonth++;
             
         }
 
-        public void calcInterest()
+        public void CalcInterest()
         {
             double monthlyInterest = AnnualInterestRate / 12;
              monthlyInterest = Balance * monthlyInterest;
@@ -43,10 +43,10 @@ namespace Chapter10Inheritance
            
         }
 
-        public void monthlyProcess()
+        public  virtual void MonthlyProcess()
         {
             Balance -= MonthlyServiceCharges;
-            calcInterest();
+            CalcInterest();
 
             NumOfDepositsPerMonth = 0;
             NumOfWithdrawalsPerMonth = 0;

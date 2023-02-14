@@ -17,7 +17,8 @@ namespace Chapter10Inheritance
             //l10Ship.Run();
             //l11CruiseShip.Run();
             //l12CargoShip.Run();
-            DemoOfShipClass.Run();
+            //DemoOfShipClass.Run();
+            l9BankAccountAndSavingsAccount.Run();
 
 
 
